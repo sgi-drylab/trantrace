@@ -1,0 +1,586 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>Workflow · Trantrace Documentation</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-prism/prism-darcula.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-callouts/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-terminal/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-emphasize/plugin.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-splitter/splitter.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-katex/katex.min.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../interface/root.html" />
+    
+    
+    <link rel="prev" href="roles.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    Introduction
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Install Trantrace</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../install-trantrace/requirements.html">
+            
+                <a href="../install-trantrace/requirements.html">
+            
+                    
+                    Requirement
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../install-trantrace/install-with-docker-compose.html">
+            
+                <a href="../install-trantrace/install-with-docker-compose.html">
+            
+                    
+                    Install with Docker-compose
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../install-trantrace/install-from-source.html">
+            
+                <a href="../install-trantrace/install-from-source.html">
+            
+                    
+                    Install from Source Code
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Getting Started</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="registration.html">
+            
+                <a href="registration.html">
+            
+                    
+                    Registration
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="roles.html">
+            
+                <a href="roles.html">
+            
+                    
+                    Role
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.3" data-path="workflow.html">
+            
+                <a href="workflow.html">
+            
+                    
+                    Workflow
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Interface</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../interface/root.html">
+            
+                <a href="../interface/root.html">
+            
+                    
+                    Administration Interface
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../interface/user.html">
+            
+                <a href="../interface/user.html">
+            
+                    
+                    User Interface
+            
+                </a>
+            
+
+            
+            <ul class="articles">
+                
+    
+        <li class="chapter " data-level="4.2.1" data-path="../interface/owner-project-management.html">
+            
+                <a href="../interface/owner-project-management.html">
+            
+                    
+                    Owner: project management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.2" data-path="../interface/translator-translation-management.html">
+            
+                <a href="../interface/translator-translation-management.html">
+            
+                    
+                    Translator: translation management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.3" data-path="../interface/reviewer-review-management.html">
+            
+                <a href="../interface/reviewer-review-management.html">
+            
+                    
+                    Reviewer: review management
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2.4" data-path="../interface/all-released-projects.html">
+            
+                <a href="../interface/all-released-projects.html">
+            
+                    
+                    All: released projects
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+            </ul>
+            
+        </li>
+    
+
+    
+        
+        <li class="header">MISC</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../glossary.html">
+            
+                <a href="../glossary.html">
+            
+                    
+                    Glossary
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="../faqs.html">
+            
+                <a href="../faqs.html">
+            
+                    
+                    FAQs
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >Workflow</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="workflow">Workflow</h1>
+<p>     <a href="../assets/workflow.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/workflow.png" alt="">
+     </a></p>
+<p>Step 1. <a href="#create"><strong>creation:</strong> user (<em>owner</em>) creates a project, uploads file and assigns entries&apos; translation to translator.</a></p>
+<p>Step 2. <a href="#translate"><strong>translation:</strong> <em>translator</em> continuously translates until approved by reviewer.</a></p>
+<p>Step 3. <a href="#review"><strong>review:</strong> <em>reviewer</em> reviews translation.</a></p>
+<p>Step 4. <a href="#iteration"><strong>release:</strong> <em>all members</em> cooperate to optimize translations until all are in good quality.</a></p>
+<h2 id="step-1-creation-user-owner-creates-project-uploads-file-and-assigns-entries-translation-to-translator">Step 1. Creation: user (<em>owner</em>) creates project, uploads file and assigns entries&apos; translation to translator</h2>
+<p><span id="create"></span></p>
+<p><strong>Owner</strong> initiates the project:</p>
+<ul>
+<li><p>Create a project: specify a source and target languages, deadline, priority, visibility and description, and designate project members (translator, reviewer, and guest).</p>
+</li>
+<li><p>Upload database files: only support comma-delimited (.csv) or tab-delimited (.tsv) text file and single-page spreadsheet (.xls or .xlsx) from Microsoft Excel.</p>
+</li>
+<li><p>Assign entries to translator.</p>
+</li>
+</ul>
+<p>     <a href="../assets/step1_creation.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/step1_creation.png" alt="">
+     </a></p>
+<h2 id="step-2-translation-translator-continuously-translates-until-approved-by-reviewer">Step 2. Translation: translator continuously translates until approved by reviewer</h2>
+<p><span id="translate"></span></p>
+<p>Translator needs continuous translation until approved by reviewer:</p>
+<ul>
+<li>Translate assigned entries from owner.</li>
+</ul>
+<p>     <a href="../assets/translation_management.translation.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/translation_management.translation.png" alt="">
+     </a></p>
+<ul>
+<li>Retranslate failed entries from reviewer.</li>
+</ul>
+<p>     <a href="../assets/translation_management.retranslation.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/translation_management.retranslation.png" alt="">
+     </a></p>
+<h2 id="step-3-review-reviewer-reviews-translation">Step 3. Review: reviewer reviews translation</h2>
+<p><span id="review"></span></p>
+<p>Reviewer checks translation one by one and decides whether to let it pass or fail.</p>
+<p>     <a href="../assets/review_management.review.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/review_management.review.png" alt="">
+     </a></p>
+<h2 id="step-4-release-all-members-cooperate-to-optimize-translations-until-all-are-in-good-quality">Step 4. Release: all members cooperate to optimize translations until all are in good quality.</h2>
+<p><span id="iteration"></span></p>
+<h3 id="release-version">Release version</h3>
+<p>Owner releases version according to progress.</p>
+<p>     <a href="../assets/step4_release.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/step4_release.png" alt="">
+     </a></p>
+<h3 id="version-iteration">Version iteration</h3>
+<ul>
+<li><p>Scenarios</p>
+<ul>
+<li><p><strong>Wrong translation</strong>: one project member opens an issue to point out the error of released translations.</p>
+<p>     <a href="../assets/open_issue.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/open_issue.png" alt="">
+     </a></p>
+</li>
+<li><p><strong>More entries</strong>: owner uploads a new file to the project.</p>
+<p>     <a href="../assets/upload.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/upload.png" alt="">
+     </a></p>
+</li>
+</ul>
+</li>
+<li><p>Procedures</p>
+<ol>
+<li>Owner assigns entries to translator. <ul>
+<li><strong>Wrong translation</strong>: owner agrees on the issue and reassigns entry&apos;s translation to translator;
+     <a href="../assets/project_management.reply.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/project_management.reply.png" alt="">
+     </a></li>
+<li><strong>More entries</strong>: owner assigns the translation of new entries to translator (repeat step1).
+     <a href="../assets/project_management.assignment.png" rel="grouped" title="" target="_self" class="fancybox">
+       <img src="../assets/project_management.assignment.png" alt="">
+     </a></li>
+</ul>
+</li>
+<li>Translator continuously translates until approved by reviewer (repeat step2)</li>
+<li>Review reviews translation (repeat step3).</li>
+<li>Owner releases version.</li>
+</ol>
+</li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="roles.html" class="navigation navigation-prev " aria-label="Previous page: Role">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../interface/root.html" class="navigation navigation-next " aria-label="Next page: Administration Interface">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"Workflow","level":"3.3","depth":1,"next":{"title":"Administration Interface","level":"4.1","depth":1,"path":"interface/root.md","ref":"interface/root.md","articles":[]},"previous":{"title":"Role","level":"3.2","depth":1,"path":"getting-started/roles.md","ref":"getting-started/roles.md","articles":[]},"dir":"ltr"},"config":{"plugins":["fancybox","-highlight","prism","prism-themes","callouts","terminal","emphasize","splitter","simple-page-toc","katex"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"prism":{"css":["prism-themes/themes/prism-darcula.css"]},"fancybox":{"helpers":{"buttons":{}}},"emphasize":{},"callouts":{"showTypeInHeader":false},"simple-page-toc":{},"splitter":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"katex":{},"fontsettings":{"theme":"white","family":"sans","size":2},"prism-themes":{},"sharing":{"facebook":true,"twitter":true,"google":true,"weibo":true,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"terminal":{"copyButtons":true,"fade":true,"style":"flat"},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"Trantrace Documentation","gitbook":"*"},"file":{"path":"getting-started/workflow.md","mtime":"2019-08-12T09:54:44.329Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2019-09-05T03:10:36.914Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.mousewheel.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox.pack.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/jquery.fancybox-buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fancybox/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-terminal/plugin.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-splitter/splitter.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

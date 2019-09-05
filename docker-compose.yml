@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  db:
+    image: mysql:5.7
+    restart: always
+    container_name: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: ${DB_PASSWORD}
+      MYSQL_DATABASE: translate_01
+    volumes:
+      - ./conf/mysqld.cnf:/etc/mysql/mysql.conf.d/mysqld.cnf
+      - ./data:/var/lib/mysql
+      - ./conf/db.sql:/docker-entrypoint-initdb.d/db.sql
+    ports:
+      - "${DB_PORT}:3306"
+  web:
+    depends_on:
+      - db
+    build:
+      context: .
+      dockerfile: php.dockerfile
+    command: ["./wait_for_mysql.sh", "${DB_PASSWORD}"]
+    #volumes:
+    #  - ./storage:/var/www/trantrace/storage/app/public/excel
+    restart: always
+    container_name: trantrace
+    ports:
+      - "${WEB_PORT}:90"
+    stdin_open: true
+    tty: true

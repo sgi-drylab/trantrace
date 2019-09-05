@@ -1,0 +1,935 @@
+@import './init.less';
+
+.el-progress-circle>svg>path:last-of-type {
+  stroke: @themeColor  !important;
+}
+
+.el-table .success-row {
+  background: #f0f9eb;
+}
+
+.el-table {
+  margin-bottom: 20px;
+  font-size: 14px;
+  // .el-table__body tr.el-table__row--striped td {
+  //   background: #f8f9fa;
+  // }
+  // .el-table__body tr:hover>td {
+  //   background-color: #f8f9fa;
+  // }
+  .el-button--text {
+    padding: 0;
+    font-size: 16px;
+    margin:0;
+    &:hover {
+      text-decoration:underline;
+    }
+  }
+}
+.el-dialog{
+  min-width:400px;
+}
+.el-dialog__body{
+  padding:15px 20px 10px;
+}
+
+.dialog_warning_text{
+  color:#E6A23C;
+  margin-bottom:10px;
+  i{
+    font-size:24px !important;
+  }
+}
+
+// .el-message-box__title{
+//   font-weight:bold;
+// }
+
+.el-message-box__status.el-icon-warning+.el-message-box__message{
+  color:#E6A23C;
+}
+
+.intervalNotifyWidth {
+  width: 220px;
+}
+
+.el-form-item.is-required:not(.is-no-asterisk)>.el-form-item__label:before{
+  position: absolute !important;
+  left: -8px;
+}
+
+.deadlineOverdueHighlight{
+  background-color:rgba(255,209,220,.5) !important;
+}
+
+#searchCon {
+  min-height: 50px;
+  font-size: 14px;
+  padding: 0 20px;
+  margin: 10px 0 30px;
+  background-color: #f4fbfb;
+  border: 1px solid #e8e8e8;
+  .el-form-item__content{
+    >.el-input,
+    >.el-select{
+      width:230px;
+    }
+  }
+
+  .el-form-item {
+    font-weight: 700;
+    margin: 5px 15px 5px 0;
+
+    &:nth-last-child(1) {
+      margin-right: 10px;
+
+      .searchBtn {
+        i:before {
+          margin-right: 5px;
+        }
+      }
+    }
+
+    .el-input--small .el-input__inner {
+      height: 35px;
+    }
+  }
+
+  .searchBtn {
+    .el-icon-search:before {
+      margin-right: 5px;
+    }
+  }
+}
+
+.el-pagination {
+  float: right;
+}
+
+footer {
+  height: 30px;
+  line-height: 30px;
+  text-align: center;
+  color: #728398;
+  background-color: #27374d;
+  opacity: 0.7;
+}
+#footer {
+  float: left;
+  width: 100%;
+  height: 30px !important;
+  text-align: center;
+  line-height: 40px;
+  font-size: 12px;
+  background-color: #f4fbfb;
+  margin-top:-30px;
+  z-index: -1;
+}
+
+
+// Backstage.vue
+html,
+body,
+.el-container,
+.el-row,
+ul {
+  height: 100%;
+}
+
+.el-container {
+  >#header {
+    border-bottom: 1px solid @themeColor;
+    display: flex;
+    justify-content:space-between;
+
+    .homeLogo {
+      float: left;
+      height: 60px;
+
+      img {
+        float: left;
+        width: 160px;
+        height: 50px;
+        margin-top: 6px;
+      }
+
+      p {
+        font-size: 22px;
+        margin: 28px 0 0 330px;
+        text-align: center;
+      }
+    }
+
+    .homeLogin {
+      float: left;
+      height: 60px;
+      .el-dropdown {
+        margin-top: 15px;
+        margin-left: 30px;
+
+        .el-dropdown-link {
+          font-size: 20px;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+  #taskListCon{
+    position:fixed;
+    bottom:100px;
+    right:10px;
+    z-index:2;
+    text-align:right;
+    .per_task{
+      cursor: pointer;
+      &:hover{
+        color:@themeColor;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  >.el-container {
+    .el-aside {
+      overflow: inherit;
+    }
+
+    .el-menu-vertical-demo {
+      padding-top: 40px;
+      padding-bottom:100px;
+
+      .el-submenu__icon-arrow {
+        right: 10px;
+      }
+
+      .el-submenu__title,
+      .el-menu-item {
+        height: 35px;
+        line-height:35px;
+        font-size: 15px;
+        i {
+          color: #fff;
+          font-weight: bold;
+        }
+      }
+
+      .el-submenu {
+
+        .el-submenu__title{
+          padding-left: 20px !important;
+          background-color: orange;
+        }
+
+        .el-menu-item-group {
+          .el-menu-item-group__title {
+            padding: 0px;
+          }
+
+          .el-menu-item:nth-child(1) {
+            margin-top: 0px;
+          }
+        }
+      }
+    }
+
+    .el-breadcrumb {
+      height: 25px;
+      font-size: 16px;
+      border-bottom: 1px solid @themeColor;
+    }
+  }
+}
+
+.el-dropdown-menu {
+  height: auto;
+  padding: 10px;
+
+  >li {
+    min-width:120px;
+    font-size: 18px;
+  }
+}
+
+.el-badge__content.is-fixed {
+  top: 5px;
+  right: 5px;
+}
+
+.el-badge__content {
+  font-size: 10px;
+}
+
+
+// Login.vue
+#login {
+  overflow: hidden;
+
+  @media (min-width: 650px) {
+    background-image: url(/images/back_login.jpg);
+    background-position: center;
+  }
+
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+
+  .modeTitle {
+    display: inline-block;
+    width: 30%;
+    color: @themeColor;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+  }
+
+  form {
+    padding: 50px 20px;
+
+    @media (min-width: 650px) {
+      width: 55vw;
+      max-width: 500px;
+      min-width: 400px;
+      float: right;
+      padding: 50px 50px 70px;
+      margin-right: 10vw;
+      margin-top: 12vh;
+      background-color: #fff;
+      box-shadow: 1px 1px 10px #aaa;
+    }
+  }
+
+  .submitBtn,
+  .resetBtn {
+    width: 49%;
+  }
+
+  .resetBtn {
+    background-color: #aaa;
+    border-color: #aaa;
+
+    &:hover {
+      background-color: #999;
+      border-color: #999;
+    }
+  }
+
+  .resigerBtn {
+    width: 100%;
+  }
+
+  .rememberStatus {
+    float: left;
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  .formLink {
+    text-align: right;
+    font-size: 14px;
+
+    a:first-child {
+      color: @themeColor;
+      padding-right: 10px;
+    }
+
+    a:nth-child(2) {
+      color: @themeColor;
+      padding-left: 10px;
+      border-left: 1px solid #ccc;
+    }
+  }
+}
+
+
+// Register.vue
+#register {
+  overflow: hidden;
+
+  @media (min-width: 650px) {
+    background-image: url(/images/back_login.jpg);
+  }
+
+  background-repeat:no-repeat;
+  background-size:100% 100%;
+
+  .modeTitle {
+    display: inline-block;
+    width: 30%;
+    color: @themeColor;
+    font-size: 20px;
+    text-align: center;
+    vertical-align: middle;
+    margin-left: 20px;
+    border-left: 2px solid #ddd;
+  }
+
+  form {
+    padding: 50px 20px;
+
+    @media (min-width: 650px) {
+      width: 55vw;
+      max-width: 500px;
+      min-width: 400px;
+      float: right;
+      padding: 50px 50px 70px;
+      margin-right: 10vw;
+      margin-top: 12vh;
+      background-color: #fff;
+      box-shadow: 1px 1px 10px #aaa;
+    }
+  }
+  .userTerm{
+    color:@themeColor;
+  }
+
+  .submitBtn,
+  .resetBtn {
+    width: 49%;
+  }
+
+  .resetBtn {
+    background-color: #aaa;
+    border-color: #aaa;
+
+    &:hover {
+      background-color: #999;
+      border-color: #999;
+    }
+  }
+
+  .registerBtn {
+    width: 100%;
+  }
+
+  .rememberStatus {
+    float: left;
+    font-size: 14px;
+    color: #aaa;
+  }
+
+  .formLink {
+    text-align: right;
+    font-size: 14px;
+
+    a:first-child {
+      color: @themeColor;
+      padding-right: 10px;
+    }
+
+    a:nth-child(2) {
+      color: @themeColor;
+      padding-left: 10px;
+      border-left: 1px solid #ccc;
+    }
+  }
+}
+
+
+// warning page
+#notAuthMain,
+#notFoundMain {
+  color: #000;
+  padding: 20px;
+
+  .title {
+    font-weight: bold;
+    font-size: 26px;
+  }
+
+  >p {
+    font-size: 16px;
+
+    >span {
+      color: @themeColor;
+      padding: 0 3px;
+    }
+
+    >a {
+      color: @themeColor;
+      text-decoration: underline;
+    }
+  }
+}
+
+// Overview.vue
+#overviewMain{
+  .overviewHeader{
+    display: flex;
+    // flex-grow:1;
+    .el-card{
+      min-width:24%;
+      height:80px;
+      flex-grow:1;
+      margin:15px 5px;
+      cursor: pointer;
+      .el-card__body{
+        padding:0;
+      }
+      .menuCon{
+        padding:18px;
+        span{
+          float:left;
+          font-size:28px;
+        }
+        div{
+          margin-left: 40px;
+          height: 42px;
+          line-height: 42px;
+          font-size: 22px;
+          color:#909399;
+        }
+      }
+    }
+    .el-card:nth-child(1){
+      i{
+        color: #fbad4c;
+      }
+    }
+    .el-card:nth-child(2){
+      i{
+        color: #59d05d;
+      }
+    }
+    .el-card:nth-child(3){
+      i{
+        color: #ff646d;      
+      }
+    }
+    .el-card:nth-child(4){
+      i{
+        color: #00b88a;      
+      }
+    }
+    .el-card:nth-child(5){
+      i{
+        color: #cc33ff;      
+      }
+    }
+  }
+}
+
+// ProjectList.vue
+#projectMain {
+  .addSearch {
+    .operationCon {
+      margin-bottom: 15px;
+    }
+  }
+
+}
+
+
+//ProjectDetail.vue
+#projectDetailMain {
+  #projectDetailCon {
+    .el-card {
+      >.el-card__header {
+      }
+
+      >.el-card__body {
+        overflow-y: auto;
+        padding: 10px 20px;
+      }
+    }
+    .box-card {
+      width:95%;
+      min-height: 160px;
+      margin: 10px;
+      padding-bottom: 10px;
+      display: inline-block;
+
+      .el-form-item {
+        margin-bottom: 8px;
+      }
+
+      .cardTitle {
+        font-weight: bold;
+        padding-right: 30px;
+      }
+
+      .operationBtn {
+        padding: 0 8px 0 0;
+        font-weight: bold;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+
+      .submitBtn {
+        color: #fd7e14;
+      }
+
+      .cancelBtn {
+        color: #aaa;
+      }
+
+      .membersInput {
+        .el-select {
+          width: 80%;
+        }
+      }
+      .el-form-item__label{
+        font-weight: bold;
+      }
+      .infoItemCon{
+
+        .infoItem {
+          width:49%;
+          display: inline-block;
+          >span {
+            font-weight: bold;
+            line-height: 20px;
+          }
+        }
+      }
+
+      
+      .progressItem {
+        padding-bottom:20px;
+        >.el-progress {
+          display: inline-block !important;
+          width: 70% !important;
+          .el-progress-bar__innerText{
+            font-size:12px;
+          }
+        }
+      }
+      .recordListCon{
+        padding-top:20px;
+        .versionHistoryItem {
+          padding: 6px 30px;
+          cursor: pointer;
+
+          &:hover {
+            color: @themeColor;
+          }
+        }
+        .el-pagination{
+          float:none;
+          padding-left: 20px;
+        }
+      }
+    }
+
+    .el-icon-loading {
+      color: @themeColor;
+      margin-left: 10px;
+    }
+  }
+}
+
+
+
+// AllocationList.vue
+#missionListMain {
+  #batchSelected {
+    font-size: 16px;
+    padding: 5px 0 0 35px;
+
+    .el-button {
+      font-size: 16px;
+
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+
+  #batchModal {
+    // text-align: center;
+
+    .el-select {
+      width:98%;
+    }
+  }
+}
+
+
+// ViewObjection.vue
+// #objectionItemMain {
+//   #objectionItemCon {
+//     padding: 10px 0;
+//     .el-alert__title {
+//       font-size: 14px;
+//     }
+
+//     .el-alert__description {
+//       font-size: 16px;
+//     }
+//     .el-tag {
+//       padding: 0 5px;
+//       margin: 5px 5px 5px 0px;
+//     }
+
+//     .source {
+//       padding: 0 20px 10px 20px;
+//       border-bottom: 1px dashed #ccc;
+//       font-weight: bold;
+//     }
+
+//     .target {
+//       padding: 10px 20px 0px 20px;
+//       font-weight: bold;
+//     }
+//   }
+// }
+
+
+// ViewObjection.vue OnTrans.vue & BrowApprovalItem.vue & BrowHistoryItem.vue & ViewDetail.vue
+#objectionItemMain,
+#onTransTaskMain,
+#approvalItemMain,
+#historyItemMain,
+#viewDetailItemMain {
+  #objectionItemCon,
+  #onTransCon,
+  #approvalItemCon,
+  #historyItemCon,
+  #viewDetailItemCon {
+    padding: 10px 0;
+
+    .el-tag {
+      padding: 0 5px;
+      margin: 5px 5px 5px 0px;
+    }
+    
+    #objectionItemBox,
+    #transBox,
+    #approvalItemBox,
+    #historyItemBox,
+    #viewDetailItemBox {
+      .boxTitleCon{
+        p{
+          width: 47%;
+          text-align: center;
+          font-weight:bold;
+          display: inline-block;
+          margin: 15px 5px 0;
+          padding: 0 5px;
+        }
+      }
+      .st_con{
+        display: flex;
+      }
+      .boxCard {
+        position: relative;
+        display: inline-block;
+        width: 47%;
+        min-height: 120px;
+        font-size: 14px;
+        margin: 5px;
+        padding: 5px;
+
+        .el-card__body {
+          height:100%;
+          padding-bottom:30px;
+          .el-textarea{
+            height:100%;
+            padding:20px 20px 30px 20px;
+            >textarea{
+              height:100%;
+            }
+          }
+          .rawDataText,
+          .afterDataText {
+            width: 100%;
+            overflow: auto;
+          }
+
+          .btnCon {
+            text-align: center;
+            position: absolute;
+            right: 10px;
+            bottom: 2px;
+          }
+        }
+      }
+    }
+
+    // .source {
+    //   padding: 0 20px 10px 20px;
+    //   border-bottom: 1px dashed #ccc;
+    //   cursor: pointer;
+    //   font-weight: bold;
+    // }
+
+    // .target {
+    //   padding: 10px 20px 0px 20px;
+    //   font-weight: bold;
+    // }
+  }
+}
+
+
+//ViewList.vue
+#viewProjectMain {
+  .addSearch {
+    .operationCon {
+      margin-bottom: 15px;
+    }
+  }
+  .el-dialog__body{
+    padding-bottom: 40px !important;
+  }
+}
+
+.timestampCon{
+  cursor:pointer;
+  &:hover{
+    color:@themeColor;
+  }
+}
+
+
+.requestLoadingCon {
+  font-size: 16px;
+  color: @themeColor;
+  text-align: center;
+}
+
+
+
+// PersonalStatistics.vue
+#personalStatisticsMain {
+  #personalStatisticsCon {
+    .box-card {
+      margin: 10px;
+    }
+  }
+}
+
+
+// UserInfo.vue
+#userMain {
+  .addSearch {
+    #addUser {
+      color:#fff;
+      border-color: #ff9900;
+      background-color: #ff9900;
+
+      &:focus {
+        outline: none;
+      }
+
+      &:hover {
+        background-color: #ffad33;
+      }
+    }
+  }
+}
+
+
+// AddUser.vue & EditUser.vue & AddProject.vue
+#addUserMain,
+#editUserMain,
+#addProjectMain {
+  min-height: 700px;
+  position: relative;
+
+  #addUserDetail,
+  #editUserDetail,
+  #addProjectDetail {
+    position: absolute;
+    left: 50%;
+    top: 80px;
+    transform: translateX(-50%);
+
+    .namePwdInp {
+      width: 340px;
+    }
+    .resetPwdBtn{
+      float: right;
+    }
+
+    .el-input,
+    .el-select {
+      width: 100%;
+    }
+
+    .el-radio {
+      margin-left: 8px;
+      margin-top:.5rem;
+    }
+
+    .el-button--primary {
+      margin-left: 20px !important;
+      margin-right: 30px !important;
+      width: 100px;
+    }
+
+    .el-button--primary,
+    .el-button--default {
+      width: 100px;
+    }
+
+    #editBtn {
+      background-color: #ff9900;
+      border-color: #ff9900;
+    }
+  }
+}
+
+
+// Desc.vue
+#descMain {
+  .descDetail {
+    height: 50px;
+    line-height: 50px;
+    text-align: left;
+    padding-left: 10px;
+
+    span {
+      display: inline-block;
+      font-size: 14px;
+      font-weight: 800;
+      cursor: pointer;
+
+      &:hover {
+        text-decoration: underline;
+      }
+
+      i {
+        display: inline-block;
+        vertical-align: middle;
+        font-size: 22px;
+        margin-left: 15px;
+        color: @selectColor;
+      }
+    }
+  }
+
+  .videoCon {
+    font-size: 14px;
+    margin-left: 10px;
+
+    >div {
+      position: relative;
+
+      >span {
+        position: absolute;
+        right: 0;
+        top: -22px;
+        z-index: 1;
+        width: 80px;
+        height: 22px;
+        line-height: 22px;
+        color: #fff;
+        text-align: center;
+        background-color: #333;
+        cursor: pointer;
+
+        &:hover {
+          color: @themeColor;
+        }
+      }
+    }
+  }
+
+  .video-js .vjs-big-play-button {
+    width: 200px;
+  }
+}
+
+
